@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox);
-        checkBox.setOnClickListener();
+
+        checkBox.setOnCheckedChangeListener(new View.OnCheckedChangeListener());
         if (checkBox.isChecked()) ;
         {
             new AlertDialog.Builder(this).setMessage("Do you want to check?");
